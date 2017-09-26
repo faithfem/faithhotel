@@ -1,11 +1,27 @@
-var express = require("express");
+var express = require('express');
 var app = express();
+var path = require('path');
 
-app.set("port", 3000);
+app.set('port', 3000);
 
-var server = app.listen(app.get("port"), function() {
-var port = server.address().port;
-console.log("Magic happens on port " + app.get("port"));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
+app.get("./json", function(req, res) {
+  console.log("GET the json");
+  res
+  .status(200)
+  .json({"jsonData" : true} );
 });
 
-console.log("Me first!");
+app.get("/file", function(req, res) {
+  console.log("GET the file");
+  res
+  .status(200)
+  .sendFile(path.join(__dirname, "app.js"));
+});
+
+var server = app.listen(app.get("port"), function(){
+  var port = server.address().port;
+  console.log("Magic happens on port " + port);
+});
