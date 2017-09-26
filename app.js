@@ -3,13 +3,6 @@ var app = express();
 
 app.set("port", process.env.PORT);
 
-/*app.get("/", function(req, res){
-    console.log("GET the homepage");
-    res.send("Express yourself");
-});*/
-
-
-//TO JOIN THIS APP TO THE HOMEPAGE INDEX.HTML IN PUBLIC FOLDER BUT NOT WORKING
 app.get("/", function(req, res) {
     console.log("GET the homepage");
     res
@@ -18,7 +11,7 @@ app.get("/", function(req, res) {
 });
 
 
-/* CODE BELOW IS NOT WORKING - DID NOT LOAD THE LAST 5 MINUTES OF VIDEO 8 AS IT WILL NOT WORK
+//CODE BELOW IS NOT WORKING - DID NOT LOAD THE LAST 5 MINUTES OF VIDEO 8 AS IT WILL NOT WORK
 app.get("/", function(req, res){
     console.log("GET the homepage");
     res
@@ -31,7 +24,7 @@ app.get("/json, function(req, res){
     res
     .status(200)
     .json("jsonData" : true} );
-});*/
+});
 
 
 var server = app.listen(app.get("port"), function() { //FEM INSERT A CALL BACK. THIS IS ASYNCHRONOUS SO LINE 9 RUNS BEFORE LINE 7. ASSIGN THE APP.LISTEN TO A VARIABLE SO THAT
