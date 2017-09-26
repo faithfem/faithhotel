@@ -4,7 +4,7 @@
   "description": "MEAN stack application",
   "main": "app.js",
   "scripts": {
-    "start":"node app.js", //FEM: MANUALLY CREATED A STARTING POIT
+    "start":"node app.js", //FEM: MANUALLY CREATED A STARTING POINT
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
