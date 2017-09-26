@@ -1,29 +1,24 @@
 {
-  "name": "mean-app",
+  "name": "meanhotel-app",
   "version": "1.0.0",
   "description": "MEAN stack application",
   "main": "app.js",
-  "scripts": {
-    "start":"node app.js", //FEM: MANUALLY CREATED A STARTING POINT
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faithfem/faithhotel.git"
-  },
-  "keywords": [
-    "mean"
-  ],
-  "author": "Full Stack Training-faith",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/faithfem/faithhotel/issues"
-  },
-  "homepage": "https://github.com/faithfem/faithhotel#readme",
   "dependencies": {
     "express": "^4.15.5"
   },
   "devDependencies": {
     "mocha": "^3.5.3"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "Faith Full Stack Training",
+  "license": "ISC"
 }
