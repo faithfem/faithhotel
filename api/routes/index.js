@@ -23,5 +23,8 @@ router
 .route("/hotels/:hotelId")
 .get(ctrlHotels.hotelsGetOne);//CHANGE FROM HOTELS GETALL TO GETONE. SEE REQUIRE PART OF THIS IN HOTELS CONTROLLERS.
 
+router
+.route("/hotels/new")
+.get(ctrlHotels.hotelsAddOne);
 
 module.exports = router;

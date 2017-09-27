@@ -4,6 +4,7 @@
   "description": "MEAN stack application",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.15.5",
     "npm": "^3.10.10",
     "read": "^1.0.7"

@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var bodyParser = require("body-parser");
 
 var routes = require("./api/routes");
 
@@ -16,7 +17,10 @@ app.use(function(req, res, next){
 //END OF NEW CODE VIDEO 10
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
+//app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
+app.use(bodyParser.urlencoded({ extended : false })); //PREFERABLE TO USE FALSE COZ ONLY NEED FORMS AND STRINGS. TRUE WILL GIVE U OTHER DATA TYPES BUT U DON'T USUALLY NEED THOSE
 
 app.use("/api", routes);
 
