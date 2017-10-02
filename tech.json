@@ -1,4 +1,33 @@
-{"_id":{"$oid":"59cbdd65503f558c1271675a"},"name":"MongoDB","role":"Database","language":"JavaScript"}
-{"_id":{"$oid":"59cbe1cc503f558c1271675c"},"name":"AngularJS","role":"Front-end framework","language":"JavaScript"}
-{"_id":{"$oid":"59cbe1cc503f558c1271675d"},"name":"Node.js","role":"Platform","language":"JavaScript"}
-{"_id":{"$oid":"59d1b07208d89759be51b421"},"name":"Express","role":"Web application server","language":"JavaScript"}
+[{
+	"_id": {
+		"$oid": "59cbdd65503f558c1271675a"
+	},
+	"name": "MongoDB",
+	"role": "Database",
+	"language": "JavaScript"
+},
+{
+	"_id": {
+		"$oid": "59cbe1cc503f558c1271675c"
+	},
+	"name": "AngularJS",
+	"role": "Front-end framework",
+	"language": "JavaScript"
+},
+{
+	"_id": {
+		"$oid": "59cbe1cc503f558c1271675d"
+	},
+	"name": "Node.js",
+	"role": "Platform",
+	"language": "JavaScript"
+},
+{
+	"_id": {
+		"$oid": "59d1b07208d89759be51b421"
+	},
+	"name": "Express",
+	"role": "Web application server",
+	"language": "JavaScript"
+}]
+
